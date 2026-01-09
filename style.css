@@ -56,8 +56,8 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Banner SECTION  */
 
+/* Banner SECTION  */
 .banner {
     width: 100%;
     height: 90vh;
@@ -69,6 +69,8 @@
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .banner-content {
@@ -160,5 +162,132 @@
 
 .play-icon {
     width: 16px;
+}
+
+/* Banner Edge Hover Effect */
+.overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s ease;
+    pointer-events: auto;
+}
+
+/* Overlay Gradient Strip */
+.overlay {
+    background:
+      repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.4) 0 6px,
+        transparent 6px 18px
+      ),
+      rgba(0,0,0,0.30);
+}
+
+/* LEFT */
+.left {
+    inset: 0 auto 0 0;
+    width: 6%;
+}
+
+/* RIGHT */
+.right {
+    inset: 0 0 0 auto;
+    width: 6%;
+}
+
+/* TOP */
+.top {
+    inset: 0 0 auto 0;
+    height: 10%;
+}
+
+/* BOTTOM */
+.bottom {
+    inset: auto 0 0 0;
+    height: 10%;
+}
+
+/* SHOW ONLY ON HOVER */
+.banner:hover .overlay:hover {
+    opacity: 1;
+}
+
+
+/* Notes Section */
+.notes-section {
+    padding: 80px 0;
+    background-color: #fbfbfb; 
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #0d1b2a;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.note-card {
+    background: #ffffff;
+    padding: 40px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* Designing Circle for Icons */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #ff5e5e; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.icon-circle img {
+    width: 24px;
+    filter: brightness(0) invert(1); 
+}
+
+.note-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 12px;
+}
+
+.note-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Hover Effect */
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
