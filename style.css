@@ -365,3 +365,77 @@
     height: 20px;
 }
 
+/* --- Early Access Section Styles --- */
+.early-access-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.cta-box {
+    background-color: #f9f8f3; /* Light off-white background as per design */
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cta-box h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #0d1b2a;
+    margin-bottom: 15px;
+}
+
+.cta-box .subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cta-box .promo-text {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* Button with Hover Effect (PH Requirement) */
+.btn-early {
+    background-color: #519872; /* Darker green shade from design */
+    color: #ffffff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.btn-early:hover {
+    background-color: #3b7355;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-early img {
+    width: 20px;
+}
+
+/* Footer Notes below the button */
+.footer-notes {
+    color: #888;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.dot {
+    font-size: 18px;
+}
